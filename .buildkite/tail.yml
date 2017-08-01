@@ -6,3 +6,7 @@ steps:
     artifact_paths:
       - "artifact"
     command: buildkite-agent meta-data set foo bar
+  - command: buildkite-agent meta-data get notify
+  # For THIS BUILD, was notify metadata set?
+  # If so, buildkite-agent meta-data --job ${NOTIFY} set package-${BUILDKITE_ORGANIZATION_SLUG} ${BUILDKITE_MESSAGE}
+  # In the final project, we use the actual S3 url instead of buildkite message, and we use DEVICE_VARIANT instead of orgslug

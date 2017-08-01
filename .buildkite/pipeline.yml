@@ -2,7 +2,7 @@
 steps: 
   - trigger: "jon-test-tail"
     label: "it me"
-  - command: buildkite-agent meta-data get foo
-    agents:
-      queue: link-aws-peers-sjc
+    build:
+      meta_data:
+        notify: "${BUILDKITE_JOB_ID}"
 
