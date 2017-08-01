@@ -1,4 +1,8 @@
 ---
-- trigger: "jon-test-tail"
-  label: "it me"
-- command: buildkite-agent meta-data get foo
+steps: 
+  - trigger: "jon-test-tail"
+    label: "it me"
+  - command: buildkite-agent meta-data get foo
+    agents:
+      queue: link-aws-peers-sjc
+
