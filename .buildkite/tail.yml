@@ -1,0 +1,8 @@
+---
+steps:
+  - label: build
+    agents:
+      queue: link-aws-peers-sjc
+    artifact_paths:
+      - "artifact"
+    command: buildkite-agent meta-data set foo bar
