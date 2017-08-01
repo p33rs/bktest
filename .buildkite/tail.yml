@@ -10,7 +10,7 @@ steps:
     - YES=$(buildkite-agent meta-data get --job 6424b441-e0a8-4fdd-b13a-f72dddb15353 notify)
     - NO=$(buildkite-agent meta-data get --job 962cbd4a-bfe7-4b98-be59-32c9c0824752 notify)
     - echo $YES
-    - echo $N
+    - echo $NO
   # This straight up fuckin fails if the metadata aint set. 
 
 
